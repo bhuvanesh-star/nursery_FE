@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayan Nursery Bazaar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="slider()">
+    <header class="header">
+    </header>
+    <section>
+        <input type="checkbox" id="navi-toggle" class="checkbox" />
+        <label for="navi-toggle" class="button">
+            <span class="icon">&nbsp;</span>
+        </label>
+        <div class="background">&nbsp;</div>
+
+        <!-- nav -->
+        <nav class="nav">
+            <ul class="list">
+                <li class="item"> <a href="homePage.html" class="link"> Home </a> </li>
+                <li class="item"> <a href="#" class="link"> About Us </a> </li>
+                <li class="item"> <a href="products.html" class="link"> Products </a> </li>
+                <li class="item"> <a href="gallery.html" class="link"> Gallery </a> </li>
+                <li class="item"> <a href="contact.html" class="link"> Contact </a> </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- Banner -->
+    <div class="banner">
+        <div class="slider">
+            <img src="images/samantha-gades-2TdhwS6Y3pU-unsplash.jpg" alt="first img" id="sliderimg">
+        </div>
+    </div>
+    <div class="aboutus">
+        <h2 style="text-align: center;">About us</h2>
+        <p class="aboutPara">
+            Rayan Nursery Garden was started in 2009 with a primary goal on the beleif that "Plant a Sapling to 
+            provide Greater Good to the Future Generation." We have a variety of products that you will need for your
+            Garden ranging from small size nursery gardens to Large Farms. We also have unique products such as Organic Fertilizers, 
+            different types of Soil for the plants to grow and nourish well, several other equipments to groom your plants.
+            <br>
+            
+        </p>
+    </div>
+    <footer>
+        <p class="footer">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Snap InfoTech All Rights Reserved</p>
+    </footer>
+    <script>
+        // code for automatic image slider using settimeout func
+var slideImg = document.getElementById("sliderimg");
+var images = new Array(
+    "images/10-Fast-Growing-Fruit-Trees-in-India2.jpg","images/12-Fruit-Trees-for-Home-Garden-India2.jpg","images/coconut-plant-1654235713-5586466.jpeg",
+    "images/guavatree.jpeg","images/hisbis.jpeg","images/vermicompost.jpg"
+     
+);
+
+var len = images.length;
+var i= 0;
+function slider(){
+    if (i > len-1){
+        i=0;
+    }
+    slideImg.src = images[i];
+    i++;
+    setTimeout('slider()', 2000)
+    // runs the func slider every 2 seconds 
+    
+}
+// document.getElementById("sliderimg").width = '300px';
+// document.getElementById("sliderimg").height='auto';
+
+    </script>
+    </body>
+    </html>
