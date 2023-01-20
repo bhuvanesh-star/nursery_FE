@@ -432,17 +432,20 @@ body {
         width: 100%;
     }
 }
-@media screen and (max-width:376px) {
-    .gallery {
-        padding:20%;
+@media screen and (max-width:576px) {
+    .gallery .column{
+        
+        display:flex;
         flex-direction: column;
         justify-content:center;
         align-items: center;
     }
 }
-@media screen and (max-width:576px) {
-    .gallery {
-        padding:20%;
+@media screen and (max-width:376px) {
+    .gallery .column{
+        
+        display:flex;
+        flex-direction: column;
         justify-content:center;
         align-items: center;
     }
