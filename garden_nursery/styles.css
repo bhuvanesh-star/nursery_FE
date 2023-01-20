@@ -407,9 +407,9 @@ body {
     }
 }
 
-@media screen and (max-width:378px) {
+@media screen and (max-width:450px) {
     .header {
-        height: 15vh;
+        height: 10vh;
     }
 }
 
@@ -428,8 +428,15 @@ body {
 }
 @media screen and (max-width:376px) {
     .gallery {
-        padding:30px;
+        padding-left:20%;
         flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:576px) {
+    .gallery {
+        padding-left:20%;
         justify-content:center;
         align-items: center;
     }
